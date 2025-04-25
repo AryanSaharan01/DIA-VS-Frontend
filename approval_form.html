@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manifesto Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../static/approval_form.css">
+</head>
+
+<body>
+    <div class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+    <div class="wave"></div>
+
+    <div class="container">
+        <div class="logo-btn-container">
+            <a href="/" class="simple-logo-btn">
+                <span>DIA Club</span>
+            </a>
+        </div>
+        <h2>Submit Your Manifesto</h2>
+
+        <div class="alert alert-success">Your submission has been received successfully!</div>
+
+        <form action="/submit-manifesto" method="POST">
+            <div class="input-group">
+                <i class="fas fa-user input-icon"></i>
+                <input type="text" id="name" name="name" value="Aryan Saharan"
+                    placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-id-card input-icon"></i>
+                <input type="text" id="roll_no" name="roll_no" value="2023001"
+                    placeholder="Enter your Roll no." required>
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-align-left input-icon"></i>
+                <textarea id="description" name="description" rows="2" placeholder="A short description (2 lines max)"
+                    required>Architecture student with passion for sustainable design</textarea>
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-file-alt input-icon"></i>
+                <textarea id="manifesto" name="manifesto" placeholder="Explain your mission or goals (under 200 words)"
+                    required>I aim to create more collaborative spaces for students and organize workshops on sustainable architecture. My focus will be on bridging the gap between theory and practical application through hands-on projects.</textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane" style="margin-right: 8px;"></i> Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
